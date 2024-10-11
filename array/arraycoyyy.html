@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // soal 1
+        function hitungRataRata(arr) {
+        if (arr.length === 0) {
+            return 0;
+        }
+        let jumlah = arr.reduce((total, nilai) => total + nilai, 0);
+        return jumlah / arr.length;
+        }
+        let angka = [2, 4, 6, 8, 10];
+        alert("Hasil rata-rata: " + hitungRataRata(angka));
+        // soal 2
+        
+    </script>
+</body>
+</html>

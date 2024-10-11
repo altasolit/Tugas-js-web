@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFunction() { 
+        let x = Number(prompt("Masukkan nilai x:"));
+        let kol = prompt("Masukkan nilai kol:");
+        let y = Number(prompt("Masukkan nilai y:"));
+
+        // let plus = (x + y );
+        // let minus = (x - y);
+        // let Multiplication = (x * y);
+        // let Division = (x / y);
+
+        let hasil;
+            let sum = (x , y) => x + y ;
+    
+            let minus = (x , y) => x - y;
+    
+            let Multiplication = (x , y) => x * y;
+    
+            let Division = (x , y) => x / y;
+
+        if(kol == '+'){
+            hasil = `Di tambah  ${x} + ${y} = ${sum(x , y)} `;
+        }else if(kol == '-'){
+            hasil = ` Di kurang  ${x} - ${y} = ${minus(x , y)}`;
+        }else if(kol == '*'){
+            hasil = ` Di kali  ${x} * ${y} = ${Multiplication(x , y)}`;
+        }else if(kol == '/') {
+            hasil = ` Di bagi  ${x} / ${y} = ${Division(x , y)}`;
+        } else {
+            hasil = `Tidak ada nilai`;
+        }
+        
+        alert(
+            "Nilai yang dimasukkan:\n" +"x = " + x + "\n" + "y = " + y + "\n\n" + "Hasil Kalkulator : " + hasil
+        );
+    }
+    myFunction();
+    </script>
+</body>
+</html>

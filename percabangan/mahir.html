@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // soal 1
+        // function hitungLamaKerja(jamMasuk, jamKeluar) {
+        //     if (jamMasuk > jamKeluar) {
+        //         jamKeluar += 12;
+        //     }
+            
+        //     let lamaKerja = jamKeluar - jamMasuk;
+            
+        //     if (lamaKerja >= 12) {
+        //         lamaKerja -= 12;
+        //     }
+            
+        //     return lamaKerja;
+        // }
+
+        // let jamMasuk = prompt("Masukkan jam masuk (1-12): ");
+        // let jamKeluar = prompt("Masukkan jam keluar (1-12): ");
+
+        // let lamaKerja = hitungLamaKerja(jamMasuk, jamKeluar);
+        // alert(`Lama bekerja: ${lamaKerja} jam`);
+
+        // soal 2
+        function hitungLamaKerja(jamMasuk, jamKeluar) {
+            if (jamMasuk > jamKeluar) {
+                jamKeluar += 12;
+            }
+            
+            let lamaKerja = jamKeluar - jamMasuk;
+            
+            if (lamaKerja >= 12) {
+                lamaKerja -= 12;
+            }
+            
+            let uang;
+
+            if(lamaKerja >= 2){
+                uang = "1500";
+            } else if (lamaKerja >= 1) {
+                uang = "1000";
+            }
+            return lamaKerja;
+        }
+
+        let jamMasuk = prompt("Masukkan jam masuk (1-12): ");
+        let jamKeluar = prompt("Masukkan jam keluar (1-12): ");
+
+        let lamaKerja = hitungLamaKerja(jamMasuk, jamKeluar);
+        alert("Lama bekerja:" + lamaKerja + " jam " + "\n\n" + uang);
+        // soal 3
+
+        // soal 4
+
+        // soal 5
+
+        // soal 6
+
+        // soal 7
+
+    </script>
+</body>
+</html>
